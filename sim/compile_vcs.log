@@ -1,0 +1,452 @@
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+f+dmptf -debug_region+cell+encrypt' instead.
+
+
+Warning-[DBGACC_DBG] Multiple debug options being used
+  The debug switches '-debug_access' and '-debug*' are being used together.  
+  For better performance, consider using only '-debug_access'.
+
+                         Chronologic VCS (TM)
+       Version V-2023.12-SP2_Full64 -- Tue Jun  2 09:51:02 2026
+
+                    Copyright (c) 1991 - 2024 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/tb_cmsdk_mcu.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/tb_cmsdk_mcu.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0ds/verilog/cortexm0ds_logic.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0ds/verilog/CORTEXM0DS.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/CORTEXM0INTEGRATION.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/models/cells/cm0_dbg_reset_sync.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_default_slave/verilog/cmsdk_ahb_default_slave.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_gpio/verilog/cmsdk_ahb_gpio.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_gpio/verilog/cmsdk_ahb_to_iop.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_slave_mux/verilog/cmsdk_ahb_slave_mux.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_to_apb/verilog/cmsdk_ahb_to_apb.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers_defs.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers_frc.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers_frc.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_slave_mux/verilog/cmsdk_apb_slave_mux.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_subsystem/verilog/cmsdk_apb_subsystem.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_subsystem/verilog/cmsdk_apb_test_slave.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_subsystem/verilog/cmsdk_irq_sync.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_timer/verilog/cmsdk_apb_timer.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_uart/verilog/cmsdk_apb_uart.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog_defs.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog_frc.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog_frc.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_iop_gpio/verilog/cmsdk_iop_gpio.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/models/clkgate/cmsdk_clock_gate.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_ram_beh.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_ram.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_ram.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_rom.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_rom.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_ahb_cs_rom_table.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_clkreset.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_addr_decode.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_addr_decode.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_clkctrl.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_clkctrl.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_pin_mux.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_stclkctrl.v'
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_sysctrl.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_sysctrl.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_system.v'
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Parsing included file '/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v'.
+Back to file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_system.v'.
+Parsing design file '/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_uart_capture.v'
+Top Level Modules:
+       tb_cmsdk_mcu
+TimeScale is 1 ns / 1 ps
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 42
+  Following is an unused input.
+  Source info: SWCLKTCK
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 43
+  Following is an unused input.
+  Source info: DPRESETn
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 44
+  Following is an unused input.
+  Source info: nTRST
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 45
+  Following is an unused input.
+  Source info: TDI
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 48
+  Following is an unused input.
+  Source info: SWDITMS
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 52
+  Following is an unused input.
+  Source info: CDBGPWRUPACK
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 55
+  Following is an unused input.
+  Source info: DCLK
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 56
+  Following is an unused input.
+  Source info: APRESETn
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 57
+  Following is an unused input.
+  Source info: DEVICEEN
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 63
+  Following is an unused input.
+  Source info: SLVRDATA
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 64
+  Following is an unused input.
+  Source info: SLVREADY
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 65
+  Following is an unused input.
+  Source info: SLVRESP
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 66
+  Following is an unused input.
+  Source info: BASEADDR
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 69
+  Following is an unused input.
+  Source info: ECOREVNUM
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v, 72
+  Following is an unused input.
+  Source info: SE
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/CORTEXM0INTEGRATION.v, 98
+  Following is an unused input.
+  Source info: SCLK
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/CORTEXM0INTEGRATION.v, 133
+  Following is an unused input.
+  Source info: DBGRESTART
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/CORTEXM0INTEGRATION.v, 135
+  Following is an unused input.
+  Source info: EDBGRQ
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/CORTEXM0INTEGRATION.v, 147
+  Following is an unused input.
+  Source info: IRQLATENCY
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/CORTEXM0INTEGRATION.v, 156
+  Following is an unused input.
+  Source info: SLEEPHOLDREQn
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v, 27
+  Following is an unused input.
+  Source info: FCLK
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v, 28
+  Following is an unused input.
+  Source info: nRESET
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v, 29
+  Following is an unused input.
+  Source info: WICLOAD
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v, 30
+  Following is an unused input.
+  Source info: WICCLEAR
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v, 31
+  Following is an unused input.
+  Source info: WICINT
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v, 32
+  Following is an unused input.
+  Source info: WICMASK
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v, 33
+  Following is an unused input.
+  Source info: WICENREQ
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v, 34
+  Following is an unused input.
+  Source info: WICDSACKn
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/models/cells/cm0_dbg_reset_sync.v, 26
+  Following is an unused input.
+  Source info: SE
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_uart/verilog/cmsdk_apb_uart.v, 427
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 4-bit wide expression is assigned to a 5-bit LHS target:
+  Source info: nxt_tx_state = (tx_state + {3'b0, tx_state_inc});
+  Expression: nxt_tx_state
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_uart/verilog/cmsdk_apb_uart.v, 565
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 4-bit wide expression is assigned to a 5-bit LHS target:
+  Source info: nxt_rx_state = (rx_state + {3'b0, rx_state_inc});
+  Expression: nxt_rx_state
+
+
+Lint-[ULCO] Unequal length in comparison operator
+/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_ram_beh.v, 76
+cmsdk_ahb_ram_beh, "(filename != "\000")"
+  A left 72-bit expression is compared to a right 8-bit expression.
+  Comparing 'filename' of type string
+  with '"\000"' of type string.
+
+
+Lint-[ULCO] Unequal length in comparison operator
+/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_ram_beh.v, 189
+cmsdk_ahb_ram_beh, "(HADDR[(AW - 1):2] == (word_addr[(AW - 1):2] + 1))"
+  A left 14-bit expression is compared to a right 32-bit expression.
+  Comparing 'HADDR[(AW - 1):2]' of type wire [15:2]
+  with '(word_addr[(AW - 1):2] + 1)' of type logic [31:0].
+
+
+Lint-[VNGS] Variable never gets set
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu.v, 139
+  Following variable has never been set any value.
+  Source info: i_tdo
+
+
+Lint-[VNGS] Variable never gets set
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu.v, 140
+  Following variable has never been set any value.
+  Source info: i_tdoen_n
+
+
+Lint-[VNGS] Variable never gets set
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu.v, 141
+  Following variable has never been set any value.
+  Source info: i_swdo
+
+
+Lint-[VNGS] Variable never gets set
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu.v, 142
+  Following variable has never been set any value.
+  Source info: i_swdoen
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_pin_mux.v, 53
+  Following is an unused input.
+  Source info: p0_altfunc
+
+
+Lint-[CAWM-L] Width mismatch
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_stclkctrl.v, 51
+  Continuous assignment width mismatch
+  18 bits (lhs) versus 32 bits (rhs).
+  Source info: assign reg_clk_div_min1 = (reg_clk_divider - 1);  
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_system.v, 136
+  Following is an unused input.
+  Source info: DFTSE
+
+
+Lint-[ULCO] Unequal length in comparison operator
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_uart_capture.v, 160
+cmsdk_uart_capture, "(i <= string_length)"
+  A left 32-bit expression is compared to a right 7-bit expression.
+  Comparing 'i' of type integer
+  with 'string_length' of type reg [6:0].
+
+
+Lint-[WMIA-L] Width mismatch in assignment
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_uart_capture.v, 172
+  Width mismatch between LHS and RHS is found in assignment:
+  The following 32-bit wide expression is assigned to a 7-bit LHS target:
+  Source info: string_length = (string_length + 1);
+  Expression: string_length
+
+
+Lint-[ULCO] Unequal length in comparison operator
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_uart_capture.v, 178
+cmsdk_uart_capture, "(i <= string_length)"
+  A left 32-bit expression is compared to a right 7-bit expression.
+  Comparing 'i' of type integer
+  with 'string_length' of type reg [6:0].
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_clkctrl.v, 38
+  Following is an unused input.
+  Source info: APBACTIVE
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_clkctrl.v, 39
+  Following is an unused input.
+  Source info: SLEEPING
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_clkctrl.v, 46
+  Following is an unused input.
+  Source info: CGBYPASS
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_rom.v, 68
+  Following is an unused input.
+  Source info: HWRITE
+
+
+Lint-[UI] Unused input
+/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_rom.v, 69
+  Following is an unused input.
+  Source info: HWDATA
+
+
+Lint-[ULCO] Unequal length in comparison operator
+/home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_ram_beh.v, 189
+cmsdk_ahb_ram_beh, "(HADDR[(AW - 1):2] == (word_addr[(AW - 1):2] + 1))"
+  A left 14-bit expression is compared to a right 32-bit expression.
+  Comparing 'HADDR[(AW - 1):2]' of type wire [15:2]
+  with '(word_addr[(AW - 1):2] + 1)' of type logic [31:0].
+
+Starting vcs inline pass...
+
+17 modules and 0 UDP read.
+recompiling module tb_cmsdk_mcu
+recompiling module CORTEXM0DAP
+recompiling module cortexm0_wic
+recompiling module cmsdk_ahb_default_slave
+recompiling module cmsdk_ahb_gpio
+recompiling module cmsdk_ahb_slave_mux
+recompiling module cmsdk_apb_dualtimers_frc
+recompiling module cmsdk_apb_timer
+recompiling module cmsdk_apb_uart
+recompiling module cmsdk_ahb_ram
+recompiling module cmsdk_ahb_rom
+recompiling module cmsdk_ahb_cs_rom_table
+recompiling module cmsdk_mcu_addr_decode
+recompiling module cmsdk_mcu_clkctrl
+recompiling module cmsdk_mcu_pin_mux
+recompiling module cmsdk_mcu_sysctrl
+recompiling module cmsdk_uart_capture
+All of 17 modules done
+make[1]: Entering directory `/home/chipmentor/project/Cortexmo/sim/csrc'
+make[1]: Leaving directory `/home/chipmentor/project/Cortexmo/sim/csrc'
+make[1]: Entering directory `/home/chipmentor/project/Cortexmo/sim/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib -L/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _10814_archive_1.so   SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/vcs_save_restore_new.o /home/chipmentor/synopsys_apps/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/chipmentor/project/Cortexmo/sim/csrc'
+CPU time: 3.248 seconds to compile + .420 seconds to elab + .240 seconds to link

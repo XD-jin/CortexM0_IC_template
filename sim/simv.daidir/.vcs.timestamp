@@ -1,0 +1,171 @@
+15       
+0 cmsdk_mcu_defs.v
+0 /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/etc/systemverilog/cmsdk_mcu_defs.v
+0 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_mcu_defs.v
+0 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_mcu_defs.v
+0 /home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_mcu_defs.v
+0 /home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cmsdk_mcu_defs.v
+0 cmsdk_ahb_memory_models_defs.v
+0 /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/etc/systemverilog/cmsdk_ahb_memory_models_defs.v
+0 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_ahb_memory_models_defs.v
+0 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_ahb_memory_models_defs.v
+0 cmsdk_apb_dualtimers_defs.v
+0 /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/etc/systemverilog/cmsdk_apb_dualtimers_defs.v
+0 cmsdk_apb_watchdog_defs.v
+0 /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/etc/systemverilog/cmsdk_apb_watchdog_defs.v
+0 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_watchdog_defs.v
+38
++cli+4
++itf+/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/vcsdp_lite.tab
++lint=all,noTMR,noVCDE
++memcbk
++v2k
++vcs+lic+wait
++vcsd1
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/libvirsim.so /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/liberrorinf.so /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/libsnpsmalloc.so /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/home/chipmentor/synopsys_apps/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/include
+-Mxllcflags=
+-P
+-Xcbug=0x1
+-debug=3
+-debug_acc
+-f /home/chipmentor/project/Cortexmo/sim/filelist.f
+-fsdb
+-full64
+-gen_obj
+-picarchive
+/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/bin/vcs1
+/home/chipmentor/synopsys_apps/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/verdi.tab
+/home/chipmentor/project/Cortexmo/sim/filelist.f
+61
+XMODIFIERS=@im=ibus
+XDG_VTNR=1
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=2
+XDG_SESSION_DESKTOP=gnome-classic
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/chipmentor/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
+XAUTHORITY=/run/gdm/auth-for-chipmentor-hF7j6u/database
+WINDOWPATH=1
+VTE_VERSION=5204
+VMR_MODE_FLAG=64
+VERDI_HOME=/home/chipmentor/synopsys_apps/verdi/V-2023.12-SP2
+VCS_PYTHON3=/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/bin/Python-3.6.1/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=chipmentor
+UNAME=/bin/uname
+TOOL_HOME=/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64
+TESTNAME=hello
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SSH_AGENT_PID=2404
+SNPS_VCS_PYTHON3=/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/bin/Python-3.6.1/bin/python3
+SNPS_VCS_CLANG_PATH=/home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2272,unix/unix:/tmp/.ICE-unix/2272
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_HOME=/home/chipmentor/synopsys_apps/scl/2021.03
+QT_IM_MODULE=ibus
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+MFLAGS=
+MAKEOVERRIDES=${-*-command-variables-*-}
+MAKELEVEL=1
+MAKEFLAGS=TESTNAME=hello
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HISTCONTROL=ignoredups
+GNOME_TERMINAL_SERVICE=:1.104
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/9bc38562_8f3d_4c34_b37d_d0d67172a44f
+GNOME_SHELL_SESSION_MODE=classic
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US.UTF-8
+GDMSESSION=gnome-classic
+DESKTOP_SESSION=gnome-classic
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-RKoBApisXA,guid=e2e680a7840ca27d10afe9c06a1eb7fb
+COLORTERM=truecolor
+0
+0
+44
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_uart_capture.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_system.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_sysctrl.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_stclkctrl.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_pin_mux.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_defs.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_clkctrl.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu_addr_decode.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_mcu.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_clkreset.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_ahb_cs_rom_table.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_rom.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_ram.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_ram_beh.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/models/memories/cmsdk_ahb_memory_models_defs.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/models/clkgate/cmsdk_clock_gate.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_iop_gpio/verilog/cmsdk_iop_gpio.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog_frc.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_watchdog/verilog/cmsdk_apb_watchdog_defs.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_uart/verilog/cmsdk_apb_uart.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_timer/verilog/cmsdk_apb_timer.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_subsystem/verilog/cmsdk_irq_sync.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_subsystem/verilog/cmsdk_apb_test_slave.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_subsystem/verilog/cmsdk_apb_subsystem.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_slave_mux/verilog/cmsdk_apb_slave_mux.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers_frc.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_apb_dualtimers/verilog/cmsdk_apb_dualtimers_defs.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_to_apb/verilog/cmsdk_ahb_to_apb.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_slave_mux/verilog/cmsdk_ahb_slave_mux.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_gpio/verilog/cmsdk_ahb_to_iop.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_gpio/verilog/cmsdk_ahb_gpio.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/logical/cmsdk_ahb_default_slave/verilog/cmsdk_ahb_default_slave.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/models/cells/cm0_dbg_reset_sync.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/cortexm0_wic.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_integration/verilog/CORTEXM0INTEGRATION.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0ds/verilog/CORTEXM0DS.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0ds/verilog/cortexm0ds_logic.v
+1444917046 /home/chipmentor/project/Cortexmo/rtl/cores/cortexm0_designstart_r1p0/logical/cortexm0_dap/verilog/CORTEXM0DAP.v
+1780408200 /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/tb_cmsdk_mcu.v
+1780399785 /home/chipmentor/project/Cortexmo/sim/filelist.f
+1716718493 /home/chipmentor/synopsys_apps/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/verdi.tab
+1717384209 /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/vcsdp_lite.tab
+4
+1717385583 /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/libvirsim.so
+1717384763 /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/liberrorinf.so
+1717384706 /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/libsnpsmalloc.so
+1717384758 /home/chipmentor/synopsys_apps/vcs/V-2023.12-SP2/linux64/lib/libvfs.so
+1780408270 simv.daidir
+-1 partitionlib

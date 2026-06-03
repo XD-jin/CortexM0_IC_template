@@ -1,0 +1,908 @@
+verdiSetActWin -dock widgetDock_<Message>
+sidCmdLineBehaviorAnalysisOpt -incr -clockSkew 0 -loopUnroll 0 -bboxEmptyModule 0  -cellModel 0 -bboxIgnoreProtected 0 
+debImport "-top" "tb_cmsdk_mcu" "-f" "filelist.f"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "tb_cmsdk_mcu" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+wvCreateWindow
+verdiSetActWin -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 {/home/chipmentor/project/Cortexmo/sim/wave_000.fsdb}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_uart_capture" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_uart_capture" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_uart_capture" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcSelect -win $_nTrace1 -range {45 50 5 16 6 1}
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 5579915.081116 -snap {("G1" 2)}
+wvZoomAll -win $_nWave2
+verdiSetActWin -win $_nWave2
+wvZoom -win $_nWave2 126666426.735886 168692369.435432
+wvZoom -win $_nWave2 138147881.555079 144965847.599781
+wvZoom -win $_nWave2 139683140.618927 140722869.379800
+wvSelectGroup -win $_nWave2 {G2}
+wvSelectSignal -win $_nWave2 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+wvSetCursor -win $_nWave2 140088727.265581 -snap {("G1" 4)}
+wvZoomAll -win $_nWave2
+wvZoom -win $_nWave2 130886212.528302 179763176.830189
+wvZoom -win $_nWave2 171463314.967602 178398310.657228
+wvSetCursor -win $_nWave2 173991317.169932 -snap {("G1" 3)}
+wvZoomAll -win $_nWave2
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_clkreset" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_clkreset" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_clkreset" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {102 102 4 5 1 1}
+srcHBSelect "tb_cmsdk_mcu" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_cmsdk_clkreset" -line 102 -pos 1 -win $_nTrace1
+srcAction -pos 101 3 7 -win $_nTrace1 -name "u_cmsdk_clkreset" -ctrlKey off
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_uart_capture" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_uart_capture" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_uart_capture" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {112 112 4 5 1 1}
+srcHBSelect "tb_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {86 86 2 3 1 1}
+srcHBSelect "tb_cmsdk_mcu" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {80 80 1 8 3 1}
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "XTAL1" -line 87 -pos 2 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvZoom -win $_nWave2 68728952.603774 75848286.339623
+verdiSetActWin -win $_nWave2
+wvZoom -win $_nWave2 71119974.122602 72076382.730135
+wvZoom -win $_nWave2 71452010.318423 71573997.529497
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "XTAL2" -line 88 -pos 2 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "XTAL2" -line 88 -pos 2 -win $_nTrace1
+srcAction -pos 87 5 3 -win $_nTrace1 -name "XTAL2" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "P0" -line 90 -pos 2 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "NRST" -line 89 -pos 2 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 71502738.585063 -snap {("G1" 7)}
+wvZoomAll -win $_nWave2
+verdiSetActWin -win $_nWave2
+wvZoom -win $_nWave2 0.000000 9036077.433962
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "nTRST" -line 92 -pos 2 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_cmsdk_mcu" -line 86 -pos 1 -win $_nTrace1
+srcAction -pos 85 1 8 -win $_nTrace1 -name "u_cmsdk_mcu" -ctrlKey off
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcSelect -win $_nTrace1 -range {57 70 5 10 9 13}
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvZoom -win $_nWave2 504656.400085 1929969.746273
+verdiSetActWin -win $_nWave2
+wvZoom -win $_nWave2 774280.892728 1340709.766384
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 9)}
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+verdiSetActWin -win $_nWave2
+wvSelectAll -win $_nWave2
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 0)}
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {27 27 1 1 37 57}
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "FCLK" -line 50 -pos 1 -win $_nTrace1
+srcAction -pos 49 5 1 -win $_nTrace1 -name "FCLK" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "clk" -line 159 -pos 1 -win $_nTrace1
+srcAction -pos 158 7 0 -win $_nTrace1 -name "clk" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "XTAL1" -line 74 -pos 1 -win $_nTrace1
+srcAction -pos 73 7 0 -win $_nTrace1 -name "XTAL1" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_clkreset" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PCLK" -line 51 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PCLK" -line 51 -pos 1 -win $_nTrace1
+srcAction -pos 50 5 3 -win $_nTrace1 -name "PCLK" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "clk" -line 125 -pos 1 -win $_nTrace1
+srcAction -pos 124 7 1 -win $_nTrace1 -name "clk" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "XTAL1" -line 74 -pos 1 -win $_nTrace1
+srcAction -pos 73 7 3 -win $_nTrace1 -name "XTAL1" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_clkreset" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl.gen_no_clock_gating" \
+           -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PCLKG" -line 52 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PCLK" -line 51 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PCLKEN" -line 53 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PCLKEN" -line 53 -pos 1 -win $_nTrace1
+srcAction -pos 52 5 2 -win $_nTrace1 -name "PCLKEN" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "i_pclken" -line 160 -pos 1 -win $_nTrace1
+srcAction -pos 159 7 3 -win $_nTrace1 -name "i_pclken" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl.gen_no_clock_gating" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PORESETn" -line 54 -pos 1 -win $_nTrace1
+srcAction -pos 53 5 6 -win $_nTrace1 -name "PORESETn" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reset_n" -line 156 -pos 1 -win $_nTrace1
+srcAction -pos 155 17 2 -win $_nTrace1 -name "reset_n" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "nxt_reset_sync" -line 84 -pos 1 -win $_nTrace1
+srcAction -pos 83 5 7 -win $_nTrace1 -name "nxt_reset_sync" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "hrst_reg" -line 157 -pos 1 -win $_nTrace1
+srcAction -pos 156 17 4 -win $_nTrace1 -name "hrst_reg" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "nxt_hrst" -line 97 -pos 1 -win $_nTrace1
+srcAction -pos 96 5 5 -win $_nTrace1 -name "nxt_hrst" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "SYSRESETREQ" -line 90 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "LOCKUP" -line 90 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "LOCKUPRESET" -line 90 -pos 1 -win $_nTrace1
+srcAction -pos 89 18 5 -win $_nTrace1 -name "LOCKUPRESET" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reg_lockupreset" -line 314 -pos 1 -win $_nTrace1
+srcAction -pos 313 7 5 -win $_nTrace1 -name "reg_lockupreset" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_sysctrl" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_sysctrl" \
+           -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_sysctrl" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "prst_reg" -line 158 -pos 1 -win $_nTrace1
+srcAction -pos 157 17 4 -win $_nTrace1 -name "prst_reg" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl.gen_no_clock_gating" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl.gen_no_clock_gating" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl.gen_no_clock_gating" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "uart0_rxd" -line 35 -pos 1 -win $_nTrace1
+srcAction -pos 34 5 4 -win $_nTrace1 -name "uart0_rxd" -ctrlKey off
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "p1_in\[0\]" -line 93 -pos 1 -win $_nTrace1
+srcAction -pos 92 7 2 -win $_nTrace1 -name "p1_in\[0\]" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "uart0_txd" -line 36 -pos 1 -win $_nTrace1
+srcTraceLoad "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux.uart0_txd" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "p1_out_mux\[1\]" -line 106 -pos 1 -win $_nTrace1
+srcTraceLoad "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux.p1_out_mux\[1\]" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "p1_altfunc\[1\]" -line 106 -pos 1 -win $_nTrace1
+srcAction -pos 105 8 8 -win $_nTrace1 -name "p1_altfunc\[1\]" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reg_altfunc" -line 576 -pos 1 -win $_nTrace1
+srcAction -pos 575 7 7 -win $_nTrace1 -name "reg_altfunc" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {384 392 5 1 1 1} -backward
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reg_altfunc\[PortWidth-1:0\]" -line 391 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reg_altfunc_padded\[PortWidth-1:0\]" -line 391 -pos 1 -win \
+          $_nTrace1
+srcAction -pos 390 7 9 -win $_nTrace1 -name "reg_altfunc_padded\[PortWidth-1:0\]" \
+          -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reg_altfunc_padded\[PortWidth-1:0\]" -line 391 -pos 1 -win \
+          $_nTrace1
+srcAction -pos 390 7 7 -win $_nTrace1 -name "reg_altfunc_padded\[PortWidth-1:0\]" \
+          -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reg_altfuncset\[loop2\]" -line 387 -pos 1 -win $_nTrace1
+srcAction -pos 386 5 4 -win $_nTrace1 -name "reg_altfuncset\[loop2\]" -ctrlKey \
+          off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "IOWDATALE\[7:0\]" -line 366 -pos 1 -win $_nTrace1
+srcAction -pos 365 14 5 -win $_nTrace1 -name "IOWDATALE\[7:0\]" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_gpio_1.u_iop_gpio" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_gpio_1.u_iop_gpio" \
+           -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "IOWDATALE\[7:0\]" -line 366 -pos 1 -win $_nTrace1
+srcAction -pos 365 14 5 -win $_nTrace1 -name "IOWDATALE\[7:0\]" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "IOWDATA" -line 231 -pos 1 -win $_nTrace1
+srcAction -pos 230 5 4 -win $_nTrace1 -name "IOWDATA" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HWDATA" -line 108 -pos 1 -win $_nTrace1
+srcAction -pos 107 7 3 -win $_nTrace1 -name "HWDATA" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm_hwdata\[31:0\]" -line 403 -pos 1 -win $_nTrace1
+srcAction -pos 402 6 5 -win $_nTrace1 -name "cm_hwdata\[31:0\]" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm0_hwdata\[31:0\]" -line 387 -pos 1 -win $_nTrace1
+srcAction -pos 386 7 5 -win $_nTrace1 -name "cm0_hwdata\[31:0\]" -ctrlKey off
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_dap" \
+           -win $_nTrace1
+srcSetScope \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_dap" \
+           -delim "." -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_dap" \
+           -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0.u_logic" \
+           -win $_nTrace1
+srcSetScope \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0.u_logic" \
+           -delim "." -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0.u_logic" \
+           -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0" \
+           -win $_nTrace1
+srcSetScope \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0" \
+           -delim "." -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0" \
+           -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0.u_logic" \
+           -win $_nTrace1
+srcSetScope \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0.u_logic" \
+           -delim "." -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0.u_logic" \
+           -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0" \
+           -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_dap" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0" \
+           -win $_nTrace1
+srcSetScope \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0" \
+           -delim "." -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_default_slave_1" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_default_slave_1" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_default_slave_1" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_system_rom_table" -win \
+           $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_system_rom_table" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_system_rom_table" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_gpio_0" -win \
+           $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_gpio_0" -delim "." \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_gpio_0" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_pin_mux" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -win \
+           $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -delim \
+           "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_system_rom_table" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_gpio_0" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -delim \
+           "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {417 417 2 3 1 1}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_apb_subsystem" -line 675 -pos 1 -win $_nTrace1
+srcAction -pos 674 1 11 -win $_nTrace1 -name "u_apb_subsystem" -ctrlKey off
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {285 285 1 2 1 1}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_rom" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_system_rom_table" -win \
+           $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_system_rom_table" \
+           -delim "." -win $_nTrace1
+srcHBDrag -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "SMUL" -line 39 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+verdiFindBar -show -widget MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "SMUL" -line 39 -pos 1 -win $_nTrace1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_cmsdk_mcu_system" -line 218 -pos 1 -win $_nTrace1
+srcAction -pos 217 1 14 -win $_nTrace1 -name "u_cmsdk_mcu_system" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -previous -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -previous -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+verdiFindBar -pattern "SMUL" -next -widget MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "SMUL" -line 46 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "SMUL" -line 46 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "SMUL" -line 46 -pos 1 -win $_nTrace1
+srcAction -pos 45 3 3 -win $_nTrace1 -name "SMUL" -ctrlKey off
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {218 218 2 3 1 1}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "DBG" -line 209 -pos 2 -win $_nTrace1
+srcAction -pos 208 5 2 -win $_nTrace1 -name "DBG" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "DBG" -line 209 -pos 2 -win $_nTrace1
+srcAction -pos 208 5 2 -win $_nTrace1 -name "DBG" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 28 -pos 3 -win $_nTrace1
+srcAction -pos 28 3 11 -win $_nTrace1 -name "\"cmsdk_mcu_defs.v\"" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 42 -pos 3 -win $_nTrace1
+srcAction -pos 42 3 13 -win $_nTrace1 -name "\"cmsdk_ahb_memory_models_defs.v\"" \
+          -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_clkreset" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_clkreset" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_clkreset" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 28 -pos 3 -win $_nTrace1
+srcAction -pos 28 3 12 -win $_nTrace1 -name "\"cmsdk_mcu_defs.v\"" -ctrlKey off
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 42 -pos 3 -win $_nTrace1
+srcAction -pos 42 3 22 -win $_nTrace1 -name "\"cmsdk_ahb_memory_models_defs.v\"" \
+          -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_system_rom_table" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_default_slave_1" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -win \
+           $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -delim \
+           "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_stclkctrl" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_system_rom_table" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_gpio_0" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR" -line 61 -pos 1 -win $_nTrace1
+srcAction -pos 60 13 1 -win $_nTrace1 -name "HADDR" -ctrlKey off
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sys_haddr" -line 756 -pos 1 -win $_nTrace1
+srcAction -pos 755 7 3 -win $_nTrace1 -name "sys_haddr" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR" -line 61 -pos 1 -win $_nTrace1
+srcAction -pos 60 13 3 -win $_nTrace1 -name "HADDR" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sys_haddr" -line 756 -pos 1 -win $_nTrace1
+srcAction -pos 755 7 3 -win $_nTrace1 -name "sys_haddr" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm_haddr\[31:0\]" -line 395 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm_haddr\[31:0\]" -line 395 -pos 1 -win $_nTrace1
+srcAction -pos 394 7 3 -win $_nTrace1 -name "cm_haddr\[31:0\]" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sys_haddr" -line 756 -pos 1 -win $_nTrace1
+srcAction -pos 755 7 4 -win $_nTrace1 -name "sys_haddr" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm_haddr\[31:0\]" -line 395 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm_haddr\[31:0\]" -line 395 -pos 1 -win $_nTrace1
+srcAction -pos 394 7 4 -win $_nTrace1 -name "cm_haddr\[31:0\]" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm0_haddr\[31:0\]" -line 379 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm0_haddr\[31:0\]" -line 379 -pos 1 -win $_nTrace1
+srcAction -pos 378 7 5 -win $_nTrace1 -name "cm0_haddr\[31:0\]" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect \
+           "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration.u_cortexm0.u_logic" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_rom" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {285 285 1 2 1 1}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm0_haddr" -line 299 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcTraceLoad "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.cm0_haddr\[31:0\]" -win \
+           $_nTrace1
+verdiDockWidgetSetCurTab -dock widgetDock_<Message>
+verdiSetActWin -dock widgetDock_<Message>
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm_haddr\[31:0\]" -line 379 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcTraceLoad "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.cm_haddr\[31:0\]" -win \
+           $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sys_haddr\[31:0\]" -line 395 -pos 1 -win $_nTrace1
+srcTraceLoad "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.sys_haddr\[31:0\]" -win \
+           $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR" -line 756 -pos 1 -win $_nTrace1
+srcTraceLoad "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.HADDR\[31:0\]" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {332 332 2 3 1 1}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_ram" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR" -line 61 -pos 1 -win $_nTrace1
+srcAction -pos 60 13 2 -win $_nTrace1 -name "HADDR" -ctrlKey off
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sys_haddr" -line 756 -pos 1 -win $_nTrace1
+srcAction -pos 755 7 5 -win $_nTrace1 -name "sys_haddr" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm_haddr\[31:0\]" -line 395 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm_haddr\[31:0\]" -line 395 -pos 1 -win $_nTrace1
+srcAction -pos 394 7 3 -win $_nTrace1 -name "cm_haddr\[31:0\]" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm0_haddr\[31:0\]" -line 379 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_rom" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_rom" -delim "." -win $_nTrace1
+srcHBDrag -win $_nTrace1
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {308 308 2 3 1 1}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -delim "." -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_rom" -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_rom" -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_rom" -win $_nTrace1
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {308 308 2 3 1 1}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR\[15:0\]" -line 312 -pos 1 -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "flash_hsel" -line 311 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "flash_hsel" -line 311 -pos 1 -win $_nTrace1
+srcAction -pos 310 5 3 -win $_nTrace1 -name "flash_hsel" -ctrlKey off
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {417 417 2 3 1 1}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_addr_decode" -line 417 -pos 1 -win $_nTrace1
+srcAction -pos 416 1 11 -win $_nTrace1 -name "u_addr_decode" -ctrlKey off
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_clkctrl" -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cortexm0integration" \
+           -win $_nTrace1
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {285 285 1 2 1 1}
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm0_hrdata" -line 307 -pos 1 -win $_nTrace1
+srcAction -pos 306 5 4 -win $_nTrace1 -name "cm0_hrdata" -ctrlKey off
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cm_hrdata\[31:0\]" -line 389 -pos 1 -win $_nTrace1
+srcAction -pos 388 6 3 -win $_nTrace1 -name "cm_hrdata\[31:0\]" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sys_hrdata\[31:0\]" -line 405 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sys_hrdata\[31:0\]" -line 405 -pos 1 -win $_nTrace1
+srcAction -pos 404 7 6 -win $_nTrace1 -name "sys_hrdata\[31:0\]" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sys_hrdata\[31:0\]" -line 405 -pos 1 -win $_nTrace1
+srcAction -pos 404 7 5 -win $_nTrace1 -name "sys_hrdata\[31:0\]" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "sys_hrdata\[31:0\]" -line 405 -pos 1 -win $_nTrace1
+srcAction -pos 404 7 5 -win $_nTrace1 -name "sys_hrdata\[31:0\]" -ctrlKey off
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_apb_subsystem" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_addr_decode" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_system_rom_table" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {87 94 9 1 3 1} -backward
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {86 93 9 1 7 1} -backward
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HREADYOUT0" -line 120 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reg_hsel\[0\]" -line 120 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "PORT0_ENABLE" -line 120 -pos 1 -win $_nTrace1
+srcAction -pos 119 14 6 -win $_nTrace1 -name "PORT0_ENABLE" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HREADYOUT0" -line 120 -pos 1 -win $_nTrace1
+srcAction -pos 119 9 2 -win $_nTrace1 -name "HREADYOUT0" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_ahb_rom.genblk2.u_ahb_ram_beh" -win \
+           $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "reg_hsel\[0\]" -line 120 -pos 1 -win $_nTrace1
+srcAction -pos 119 4 5 -win $_nTrace1 -name "reg_hsel\[0\]" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "nxt_hsel_reg" -line 116 -pos 1 -win $_nTrace1
+srcAction -pos 115 5 6 -win $_nTrace1 -name "nxt_hsel_reg" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {99 109 1 1 1 1} -backward
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {99 109 1 1 1 1} -backward
+srcDeselectAll -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_ahb_slave_mux_sys_bus" \
+           -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_stclkctrl" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_stclkctrl" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_stclkctrl" \
+           -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_sysctrl" \
+           -win $_nTrace1
+srcSetScope "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_sysctrl" \
+           -delim "." -win $_nTrace1
+srcHBSelect "tb_cmsdk_mcu.u_cmsdk_mcu.u_cmsdk_mcu_system.u_cmsdk_mcu_sysctrl" \
+           -win $_nTrace1
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1

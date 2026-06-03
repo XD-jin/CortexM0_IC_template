@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1780407876.012023769, "rt":2.89, "ut":0.20, "st":0.37}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1780407875.738018801}
+{"VCS_COMP_START_TIME": 1780407875.738018801}
+{"VCS_COMP_END_TIME": 1780407878.955540295}
+{"VCS_USER_OPTIONS": "-full64 +vcs+lic+wait +v2k +lint=all,noTMR,noVCDE -debug -f /home/chipmentor/project/Cortexmo/sim/filelist.f"}
+{"vcs1": {"peak_mem": 558604}}

@@ -1,0 +1,2 @@
+Command Line: /home/chipmentor/synopsys_apps/verdi/V-2023.12-SP2/platform/LINUXAMD64/bin/Novas -top tb_cmsdk_mcu -f filelist.f
+uname(Linux localhost.localdomain 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x86_64)

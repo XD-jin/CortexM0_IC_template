@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1780399815.393742482, "rt":5.06, "ut":2.73, "st":0.41}}
+{"vcselab":{"timestamp_begin":1780399820.504367685, "rt":2.24, "ut":0.24, "st":0.12}}
+{"link":{"timestamp_begin":1780399822.787648119, "rt":0.11, "ut":0.07, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1780399815.126695031}
+{"VCS_COMP_START_TIME": 1780399815.126695031}
+{"VCS_COMP_END_TIME": 1780399822.939097498}
+{"VCS_USER_OPTIONS": "-full64 +vcs+lic+wait +v2k +lint=all,noTMR,noVCDE -debug -f /home/chipmentor/project/Cortexmo/sim/filelist.f"}
+{"vcs1": {"peak_mem": 558604}}
+{"vcselab": {"peak_mem": 377400}}

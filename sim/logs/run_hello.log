@@ -1,0 +1,23 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Jun  2 09:51 2026
+*Verdi* Loading libsscore_vcs202312.so
+FSDB Dumper for VCS, Release Verdi_V-2023.12-SP2, Linux x86_64/64bit, 05/26/2024
+(C) 1996 - 2024 by Synopsys, Inc.
+*Verdi* : Enable automatic switching of the FSDB file.
+*Verdi* : (Filename='wave', Limit Size=1000MB, File Amount=50).
+*Verdi* : Create FSDB file 'wave_000.fsdb'
+*Verdi* : Create the file 'wave.log' to log the time range of each FSDB file.
+*Verdi* : Create virtual FSDB file 'wave.vf' to log each FSDB file.
+*Verdi* : Begin traversing the scope (tb_cmsdk_mcu), layer (0).
+*Verdi* : End of traversing.
+145970 ns UART: Hello world
+175790 ns UART: ** TEST PASSED **
+179610 ns UART: Test Ended
+$stop at time 179610 ns Scope: tb_cmsdk_mcu.u_cmsdk_uart_capture.p_sim_end File: /home/chipmentor/project/Cortexmo/rtl/SYS/verilog/cmsdk_uart_capture.v Line: 208
+ucli%            V C S   S i m u l a t i o n   R e p o r t 
+Time: 179610000 ps
+CPU Time:      1.200 seconds;       Data structure size:   0.9Mb
+Tue Jun  2 09:51:18 2026
